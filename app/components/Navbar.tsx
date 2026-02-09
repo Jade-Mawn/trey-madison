@@ -5,7 +5,6 @@ import { useState } from "react";
 
 const subpages = [
   { title: "About", slug: "/about" },
-  { title: "Writing", slug: "#writing" },
   { title: "Resume", slug: "/resume" },
   { title: "Substack", slug: "https://treymadison.substack.com/" },
   { title: "LinkedIn", slug: "https://www.linkedin.com/in/trey-madison-116403328/" },

@@ -64,11 +64,11 @@ export function WritingCarousel({ posts }: { posts: Post[] }) {
     <div className="relative w-full">
       {/* Side fades — wider zone */}
       <div
-        className="pointer-events-none absolute left-0 top-0 z-10 h-full w-40 shrink-0 bg-gradient-to-r from-[var(--surface)] via-[var(--surface)]/80 to-transparent sm:w-56"
+        className="pointer-events-none absolute left-0 top-0 z-10 h-full w-40 shrink-0 bg-gradient-to-r from-[var(--surface)] via-[var(--surface)]/80 to-transparent hidden sm:block"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute right-0 top-0 z-10 h-full w-40 shrink-0 bg-gradient-to-l from-[var(--surface)] via-[var(--surface)]/80 to-transparent sm:w-56"
+        className="pointer-events-none absolute right-0 top-0 z-10 h-full w-40 shrink-0 bg-gradient-to-l from-[var(--surface)] via-[var(--surface)]/80 to-transparent hidden sm:block"
         aria-hidden
       />
       <div
