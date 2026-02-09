@@ -6,25 +6,17 @@
 }
 
 :root {
-  --foreground: #1a1a1a;
-  --foreground-muted: #525252;
-  --background: #fafaf9;
-  --surface: #ffffff;
-  --border: #e7e5e4;
-  --accent: #b45309;
-  --accent-hover: #92400e;
+  --foreground: #0f172a;
+  --foreground-muted: #475569;
+  --background: #f0f0f0;
+  --surface: #f8fafc;
+  --border: #e2e8f0;
+  --accent: #0f172a;
+  --accent-hover: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #fafaf9;
-    --foreground-muted: #a8a29e;
-    --background: #1c1917;
-    --surface: #292524;
-    --border: #44403c;
-    --accent: #f59e0b;
-    --accent-hover: #fbbf24;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -34,4 +26,13 @@ body {
   font-feature-settings: "kern" 1, "liga" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar while keeping scroll behavior */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

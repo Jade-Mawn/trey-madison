@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, DM_Sans } from "next/font/google";
+import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
+import { Navbar } from "./components/Navbar";
 import "./globals.css";
 
-const instrumentSerif = Instrument_Serif({
-  weight: "400",
+const libreBaskerville = Libre_Baskerville({
+  weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
@@ -26,8 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrumentSerif.variable} ${dmSans.variable}`}>
-      <body className="antialiased min-h-screen font-sans">{children}</body>
+    <html lang="en" className={`${libreBaskerville.variable} ${sourceSans.variable}`}>
+      <body className="antialiased min-h-screen font-sans">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
