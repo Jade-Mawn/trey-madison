@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@sanity/client": "6.1.4",
+    "@sanity/client": "^7.14.1",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^5.9.0",
     "next": "^16.1.6",
@@ -17,7 +17,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rss-parser": "^3.13.0",
-    "sanity": "^5.9.0"
+    "sanity": "^5.9.0",
+    "styled-components": "^6.3.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
