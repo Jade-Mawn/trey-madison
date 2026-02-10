@@ -7,11 +7,8 @@
  * https://github.com/sanity-io/next-sanity
  */
 
-
 import { NextStudio } from 'next-sanity/studio'
 import config from '../../../sanity.config'
-
-export const runtime = 'edge';
 
 export const dynamic = 'force-static'
 
