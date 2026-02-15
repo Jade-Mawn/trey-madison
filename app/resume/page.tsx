@@ -6,16 +6,18 @@ export default function ResumePage() {
       {/* Hero - Smaller banner with name and contact info */}
       <header className="relative border-b border-[var(--border)]">
         <BlobBackground />
-        <div className="mx-auto max-w-4xl px-5 pt-16 pb-24 sm:px-8 sm:pt-20 sm:pb-32 md:pt-24 md:pb-40 text-left relative z-10">
-          <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--navy-blue)] sm:text-6xl md:text-7xl navy-dropshadow">
+        <div className="mx-auto max-w-4xl px-5 pt-10 pb-16 sm:px-8 sm:pt-12 sm:pb-20 md:pt-16 md:pb-24 text-left relative z-10">
+          <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--navy-blue)] sm:text-6xl md:text-7xl white-dropshadow">
             <div className="flex flex-col">
               <span className="block">Carlton</span>
               <span className="block translate-x-24">Madison</span>
             </div>
           </h1>
-          <p className="mt-5 text-lg text-[var(--off-white)] sm:text-xl max-w-xl mx-auto navy-dropshadow">
-            1824 Woodland Pointe Dr. • 615-917-7835 • trey.madison2024@gmail.com • <a href="https://www.linkedin.com/in/trey-madison-116403328/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-color)] hover:underline">LinkedIn</a>
-          </p>
+          <div className="py-2 px-4 rounded-lg mt-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
+            <p className="text-lg text-[var(--navy-blue)] sm:text-xl text-center">
+              1824 Woodland Pointe Dr. • 615-917-7835 • trey.madison2024@gmail.com • <a href="https://www.linkedin.com/in/trey-madison-116403328/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-color)] hover:underline">LinkedIn</a>
+            </p>
+          </div>
         </div>
       </header>
 

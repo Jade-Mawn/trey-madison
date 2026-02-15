@@ -12,16 +12,18 @@ export default async function Home() {
       {/* Hero — more vertical space so writing is below the fold */}
       <header className="relative border-b border-[var(--border)]">
         <BlobBackground />
-        <div className="mx-auto max-w-4xl px-5 py-40 sm:px-8 sm:py-56 md:py-64 text-left relative z-10">
-          <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--foreground)] sm:text-6xl md:text-7xl">
+        <div className="mx-auto max-w-4xl px-5 pt-20 pb-64 sm:px-8 sm:pt-24 sm:pb-72 md:pt-32 md:pb-80 text-left relative z-10">
+          <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--navy-blue)] sm:text-6xl md:text-7xl white-dropshadow">
             <div className="flex flex-col">
               <span className="block">Trey</span>
               <span className="block translate-x-24">Madison</span>
             </div>
           </h1>
-          <p className="mt-5 text-lg text-[var(--foreground-muted)] sm:text-xl max-w-xl mx-auto">
-            I'm a current undergraduate student at the University of Richmond studying Political Science and Leadership Studies, with a minor in Law & the Liberal Arts and Economics. I'm someone who feels strongly and leads passionately, and who gives 110% to anything I commit to.
-          </p>
+          <div className="py-2 px-4 rounded-lg mt-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
+            <p className="text-lg text-[var(--navy-blue)] sm:text-xl max-w-3xl mx-auto">
+              I'm a current undergraduate student at the University of Richmond studying Political Science and Leadership Studies, with a minor in Law & the Liberal Arts and Economics. I'm someone who feels strongly and leads passionately, and who gives 110% to anything I commit to.
+            </p>
+          </div>
         </div>
       </header>
 
