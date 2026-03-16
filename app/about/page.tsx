@@ -1,12 +1,9 @@
-import BlobBackground from "../components/BlobBackground";
-
 export const revalidate = 3600; // ISR: revalidate every hour
 
 export default async function About() {
   return (
     <main className="min-h-screen">
       <header className="relative">
-        <BlobBackground />
         <div className="mx-auto max-w-4xl px-5 pt-20 pb-64 sm:px-8 sm:pt-24 sm:pb-72 md:pt-32 md:pb-80 text-left relative z-10">
           <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--navy-blue)] sm:text-6xl md:text-7xl white-dropshadow">
             About Me

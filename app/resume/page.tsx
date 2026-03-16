@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import BlobBackground from "../components/BlobBackground";
 import ReadMoreDropdown from "../components/ReadMoreDropdown";
 
 interface ExperienceItem {
@@ -61,7 +60,6 @@ export default function ResumePage() {
     <main className="min-h-screen">
       {/* Hero - Smaller banner with name and contact info */}
       <header className="relative border-b border-[var(--border)]">
-        <BlobBackground />
         <div className="mx-auto max-w-4xl px-5 pt-10 pb-16 sm:px-8 sm:pt-12 sm:pb-20 md:pt-16 md:pb-24 text-left relative z-10">
           <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--navy-blue)] sm:text-6xl md:text-7xl white-dropshadow">
             <div className="flex flex-col">

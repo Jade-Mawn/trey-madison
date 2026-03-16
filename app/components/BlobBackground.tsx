@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BlobBackground: React.FC = () => {
+export function BlobBackground() {
   return (
     <div 
       className="absolute inset-0 overflow-hidden -z-10"

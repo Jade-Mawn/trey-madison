@@ -15,7 +15,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full p-8 flex justify-between items-center z-[100] mix-blend-difference text-white">
+      <nav className="fixed top-0 left-0 w-full p-8 flex justify-between items-center z-[100] text-white">
         <Link href="/" className="text-sm font-bold tracking-[0.3em] uppercase hover:opacity-50 transition-opacity">
           Home
         </Link>
@@ -32,14 +32,14 @@ export function Navbar() {
       </nav>
 
       {/* Menu Overlay */}
-      <div className={`fixed inset-0 z-[90] bg-background/95 backdrop-blur-xl transition-all duration-500 flex items-center justify-center ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`fixed inset-0 z-[90] bg-[rgba(255,255,255,0.3)] backdrop-blur-xl transition-all duration-500 flex items-center justify-center ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className="flex flex-col items-center space-y-4 md:space-y-8 text-center py-12">
           {subpages.map((page, i) => (
             <Link 
               key={i} 
               href={page.slug}
               onClick={() => setIsOpen(false)}
-              className="font-serif text-3xl md:text-5xl font-black tracking-tighter uppercase hover:text-stripe transition-all duration-300"
+              className="font-serif text-3xl md:text-5xl font-black tracking-tighter uppercase hover:text-[var(--accent)] transition-all duration-300"
               style={{ 
                 transitionDelay: `${i * 30}ms`,
                 transform: isOpen ? 'translateY(0)' : 'translateY(10px)',

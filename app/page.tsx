@@ -1,6 +1,5 @@
 import { getLatestPosts } from "@/lib/posts";
 import { WritingCarousel } from "./components/WritingCarousel";
-import BlobBackground from "./components/BlobBackground";
 
 export const revalidate = 3600; // ISR: revalidate every hour
 
@@ -11,7 +10,6 @@ export default async function Home() {
     <main className="min-h-screen">
       {/* Hero — more vertical space so writing is below the fold */}
       <header className="relative border-b border-[var(--border)]">
-        <BlobBackground />
         <div className="mx-auto max-w-4xl px-5 pt-20 pb-64 sm:px-8 sm:pt-24 sm:pb-72 md:pt-32 md:pb-80 text-left relative z-10">
           <h1 className="font-serif text-5xl font-bold tracking-tight text-[var(--navy-blue)] sm:text-6xl md:text-7xl white-dropshadow">
             <div className="flex flex-col">

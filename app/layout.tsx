@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import { Navbar } from "./components/Navbar";
 import "./globals.css";
+import { BlobBackground } from "./components/BlobBackground";
 
 const libreBaskerville = Libre_Baskerville({
   weight: ["400", "700"],
@@ -29,8 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${libreBaskerville.variable} ${sourceSans.variable}`}>
       <body className="antialiased font-sans">
-        <Navbar />
-        {children}
+        <div className="fixed inset-0 -z-10">
+          <BlobBackground />
+        </div>
+        <div className="relative z-0 min-h-screen">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );

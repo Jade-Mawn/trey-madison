@@ -20,7 +20,7 @@
 
 html {
   scroll-behavior: smooth;
-  overscroll-behavior: contain;
+  background-color: var(--navy-blue); /* Deep navy background for over-scroll */
 }
 
 body {
@@ -29,7 +29,6 @@ body {
   font-feature-settings: "kern" 1, "liga" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--navy-blue); /* Deep navy background for over-scroll */
 }
 
 /* Hide scrollbar while keeping scroll behavior */
