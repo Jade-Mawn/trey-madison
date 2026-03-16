@@ -19,8 +19,8 @@ export default async function Home() {
               <span className="block translate-x-24">Madison</span>
             </div>
           </h1>
-          <div className="py-2 px-4 rounded-lg mt-5" style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)' }}>
-            <p className="text-lg text-[var(--navy-blue)] sm:text-xl max-w-3xl mx-auto">
+          <div className="py-6 px-10 rounded-lg mt-5" style={{ backgroundColor: 'var(--text-background-color)' }}>
+            <p className="text-lg text-[var(--off-white)] sm:text-xl text-left" style={{ textIndent: '2em' }}>
               I'm a current undergraduate student at the University of Richmond studying Political Science and Leadership Studies, with a minor in Law & the Liberal Arts and Economics. I'm someone who feels strongly and leads passionately, and who gives 110% to anything I commit to.
             </p>
           </div>

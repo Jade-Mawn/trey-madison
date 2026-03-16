@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${libreBaskerville.variable} ${sourceSans.variable}`}>
-      <body className="antialiased min-h-screen font-sans">
+      <body className="antialiased font-sans">
         <Navbar />
         {children}
       </body>
